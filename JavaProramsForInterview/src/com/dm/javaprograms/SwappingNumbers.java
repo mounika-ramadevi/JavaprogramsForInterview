@@ -10,9 +10,15 @@ public class SwappingNumbers {
 		int secondVar = sc.nextInt();
 		System.out.println("Before Swapping "+firstVar+ " "+secondVar);
 		//Logic 1
-		int temp = firstVar;
+		/*int temp = firstVar;
 		firstVar = secondVar;
 		secondVar = temp;
+		System.out.println("After Swapping"+firstVar+ " "+secondVar);*/
+		
+		//Logic 2
+		firstVar = firstVar+secondVar;
+		secondVar = firstVar-secondVar;
+		firstVar = firstVar-secondVar;
 		System.out.println("After Swapping"+firstVar+ " "+secondVar);
 	}
 
